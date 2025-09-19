@@ -4,4 +4,4 @@ usage: `curl -fsSL https://raw.githubusercontent.com/wertecs/public-scripts/refs
 
 Script will store a file that runs the check localy -> `ZZ_check-infected-packages.mjs`
 
-To get the latest version, remove it and run the first command again
+the file will get removed after the run
