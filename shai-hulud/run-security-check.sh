@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Save your .mjs script as check-infected-packages.mjs in the same directory as this script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CHECK_SCRIPT="$SCRIPT_DIR/ZZ_check-infected-packages.mjs"
 
@@ -37,3 +36,9 @@ for repo in "${REPOS[@]}"; do
 done
 
 echo -e "\n✅ Security check completed!"
+
+# Clean up downloaded dependency
+if [[ -f "$CHECK_SCRIPT" ]]; then
+    rm -f "$CHECK_SCRIPT"
+    echo "🧹 Cleaned up downloaded dependency"
+fi
