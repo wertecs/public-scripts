@@ -1,0 +1,278 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode Character Test Document</title>
+    <style>
+        body {
+            font-family: "Noto Sans", "Arial Unicode MS", "DejaVu Sans", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            border-left: 4px solid #007acc;
+            padding-left: 15px;
+        }
+        .char-section {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .char-line {
+            font-size: 16px;
+            margin: 5px 0;
+            word-break: break-all;
+        }
+        .emoji-line {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        .description {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unicode Character Test Document</h1>
+
+    <h2>Latin Diacritics</h2>
+    <div class="char-section">
+        <div class="description">Czech</div>
+        <div class="char-line">áčďéěíňóřšťúůýž ÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ</div>
+
+        <div class="description">Slovak</div>
+        <div class="char-line">áäčďéíĺľňóôŕšťúýž ÁÄČĎÉÍĹĽŇÓÔŔŠŤÚÝŽ</div>
+
+        <div class="description">Polish</div>
+        <div class="char-line">ąćęłńóśźż ĄĆĘŁŃÓŚŹŻ</div>
+
+        <div class="description">Hungarian</div>
+        <div class="char-line">áéíóöőúüű ÁÉÍÓÖŐÚÜŰ</div>
+
+        <div class="description">Romanian</div>
+        <div class="char-line">ăâîșț ĂÂÎȘȚ</div>
+
+        <div class="description">French</div>
+        <div class="char-line">àâäçéèêëïîôöùûüÿ ÀÂÄÇÉÈÊËÏÎÔÖÙÛÜŸ</div>
+
+        <div class="description">German</div>
+        <div class="char-line">äöüß ÄÖÜ</div>
+
+        <div class="description">Spanish</div>
+        <div class="char-line">áéíñóúü ÁÉÍÑÓÚÜ</div>
+
+        <div class="description">Portuguese</div>
+        <div class="char-line">àáâãçéêíóôõú ÀÁÂÃÇÉÊÍÓÔÕÚ</div>
+
+        <div class="description">Italian</div>
+        <div class="char-line">àéèíîìóòú ÀÉÈÍÎÌÓÒÚ</div>
+
+        <div class="description">Turkish</div>
+        <div class="char-line">çğıİöşü ÇĞIİÖŞÜ</div>
+
+        <div class="description">Nordic</div>
+        <div class="char-line">åæøäöé ÅÆØÄÖÉ</div>
+
+        <div class="description">Icelandic</div>
+        <div class="char-line">áðéíóúýþæö ÁÐÉÍÓÚÝÞÆÖ</div>
+
+        <div class="description">Baltic</div>
+        <div class="char-line">ąčęėįšųūž āčēģīķļņšūž äöõüšž</div>
+
+        <div class="description">Croatian/Serbian</div>
+        <div class="char-line">čćđšž ČĆĐŠŽ</div>
+
+        <div class="description">Vietnamese</div>
+        <div class="char-line">àáảãạâầấẩẫậăằắẳẵặèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữự</div>
+
+        <div class="description">Pinyin</div>
+        <div class="char-line">āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ</div>
+    </div>
+
+    <h2>Cyrillic Scripts</h2>
+    <div class="char-section">
+        <div class="description">Russian Basic</div>
+        <div class="char-line">абвгдеёжзийклмнопрстуфхцчшщъыьэюя</div>
+        <div class="char-line">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</div>
+
+        <div class="description">Extended Cyrillic</div>
+        <div class="char-line">ђѓєѕіїјљњћќѝўџѡѣѥѧѩѫѭѯѱѳѵѷѹѻѽѿҁҋҍҏґғҕҗҙқҝҟҡңҥҧҩҫҭүұҳҵҷҹһҽҿӏӂӄӆӈӊӌӎӑӓӕӗәӛӝӟӡӣӥӧөӫӭӯӱӳӵӷӹӻӽӿԁԃԅԇԉԋԍԏԑԓԕԗԙԛԝԟԡԣԥԧԩԫԭԯ</div>
+    </div>
+
+    <h2>Greek</h2>
+    <div class="char-section">
+        <div class="char-line">αβγδεζηθικλμνξοπρστυφχψω</div>
+        <div class="char-line">ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ</div>
+        <div class="description">With accents</div>
+        <div class="char-line">άέήίόύώΐΰ</div>
+    </div>
+
+    <h2>Arabic</h2>
+    <div class="char-section">
+        <div class="char-line" dir="rtl" style="font-family: 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;">ابتثجحخدذرزسشصضطظعغفقكلمنهوي</div>
+        <div class="char-line" dir="rtl" style="font-family: 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;">ءآأؤإئا</div>
+        <div class="description">Arabic numbers</div>
+        <div class="char-line" style="font-family: 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;">٠١٢٣٤٥٦٧٨٩</div>
+    </div>
+
+    <h2>Hebrew</h2>
+    <div class="char-section">
+        <div class="char-line" dir="rtl" style="font-family: 'Noto Sans Hebrew', 'Arial Unicode MS', Arial, sans-serif;">אבגדהוזחטיכלמנסעפצקרשת</div>
+        <div class="description">Final forms</div>
+        <div class="char-line" dir="rtl" style="font-family: 'Noto Sans Hebrew', 'Arial Unicode MS', Arial, sans-serif;">ךםןףץ</div>
+    </div>
+
+    <h2>Chinese Characters</h2>
+    <div class="char-section">
+        <div class="char-line" style="font-family: 'Noto Sans CJK SC', 'SimSun', 'Arial Unicode MS', Arial, sans-serif;">你好世界 北京烤鸭 中文很难学</div>
+    </div>
+
+    <h2>Japanese</h2>
+    <div class="char-section">
+        <div class="description">Hiragana</div>
+        <div class="char-line" style="font-family: 'Noto Sans CJK JP', 'Yu Gothic', 'Arial Unicode MS', Arial, sans-serif;">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん</div>
+
+        <div class="description">Katakana</div>
+        <div class="char-line" style="font-family: 'Noto Sans CJK JP', 'Yu Gothic', 'Arial Unicode MS', Arial, sans-serif;">アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン</div>
+    </div>
+
+    <h2>Korean</h2>
+    <div class="char-section">
+        <div class="description">Hangul</div>
+        <div class="char-line" style="font-family: 'Noto Sans CJK KR', 'Malgun Gothic', 'Arial Unicode MS', Arial, sans-serif;">가나다라마바사아자차카타파하</div>
+        <div class="description">Consonants</div>
+        <div class="char-line" style="font-family: 'Noto Sans CJK KR', 'Malgun Gothic', 'Arial Unicode MS', Arial, sans-serif;">ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ</div>
+        <div class="description">Vowels</div>
+        <div class="char-line" style="font-family: 'Noto Sans CJK KR', 'Malgun Gothic', 'Arial Unicode MS', Arial, sans-serif;">ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ</div>
+    </div>
+
+    <h2>Thai</h2>
+    <div class="char-section">
+        <div class="char-line" style="font-family: 'Noto Sans Thai', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif;">กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮ</div>
+        <div class="char-line" style="font-family: 'Noto Sans Thai', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif;">ะาำิีึืุูเแโใไ</div>
+    </div>
+
+    <h2>Devanagari (Hindi/Sanskrit)</h2>
+    <div class="char-section">
+        <div class="char-line" style="font-family: 'Noto Sans Devanagari', 'Mangal', 'Arial Unicode MS', Arial, sans-serif;">अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह</div>
+        <div class="char-line" style="font-family: 'Noto Sans Devanagari', 'Mangal', 'Arial Unicode MS', Arial, sans-serif;">"ािीुूृेैोौं्"</div>
+    </div>
+
+    <h2>Other Scripts</h2>
+    <div class="char-section">
+        <div class="description">Armenian</div>
+        <div class="char-line" style="font-family: 'Noto Sans Armenian', 'Arial Unicode MS', Arial, sans-serif;">աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆ ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ</div>
+
+        <div class="description">Georgian</div>
+        <div class="char-line" style="font-family: 'Noto Sans Georgian', 'Sylfaen', 'Arial Unicode MS', Arial, sans-serif;">აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ</div>
+
+        <div class="description">Braille</div>
+        <div class="char-line">⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵</div>
+
+        <div class="description">Runic</div>
+        <div class="char-line">ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛝᛟᛞ</div>
+
+        <div class="description">Egyptian Hieroglyphs</div>
+        <div class="char-line">𓀀𓀁𓀂𓀃𓀄𓀅𓀆𓀇𓀈𓀉𓀊𓀋𓀌𓀍𓀎𓀏</div>
+    </div>
+
+    <h2>Mathematical Symbols</h2>
+    <div class="char-section">
+        <div class="description">Math operators</div>
+        <div class="char-line">±×÷∞≠≤≥∑∏∆∇√∫∂∀∃∈∉∪∩⊂⊃⊆⊇∧∨¬→↔∴∵≡≈∝∼∝℘ℜℑ∅ℕℤℚℝℂ</div>
+
+        <div class="description">Fractions</div>
+        <div class="char-line">½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅟</div>
+
+        <div class="description">Mathematical Alphanumeric - Bold</div>
+        <div class="char-line">𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙</div>
+
+        <div class="description">Mathematical Alphanumeric - Script</div>
+        <div class="char-line">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</div>
+
+        <div class="description">Mathematical Alphanumeric - Double-struck</div>
+        <div class="char-line">𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝔸𝕍𝕎𝕏𝕐ℤ</div>
+    </div>
+
+    <h2>Symbols &amp; Punctuation</h2>
+    <div class="char-section">
+        <div class="description">Card suits</div>
+        <div class="char-line">♠♥♦♣ ♤♡♢♧</div>
+
+        <div class="description">Chess pieces</div>
+        <div class="char-line">♔♕♖♗♘♙♚♛♜♝♞♟</div>
+
+        <div class="description">Musical notes</div>
+        <div class="char-line">♩♪♫♬♭♮♯𝄞𝄢𝄡𝄠</div>
+
+        <div class="description">Arrows</div>
+        <div class="char-line">←↑→↓↖↗↘↙↔↕⟵⟶⟷⇐⇑⇒⇓⇔⇕</div>
+
+        <div class="description">Currency</div>
+        <div class="char-line">$¢£¥€₹₽₩₪₨₵₦₡₴₸₺₼₿</div>
+
+        <div class="description">Zodiac</div>
+        <div class="char-line">♈♉♊♋♌♍♎♏♐♑♒♓⛎</div>
+
+        <div class="description">Dice</div>
+        <div class="char-line">⚀⚁⚂⚃⚄⚅</div>
+
+        <div class="description">Box drawing</div>
+        <div class="char-line">┌┬┐├┼┤└┴┘│─╔╦╗╠╬╣╚╩╝║═┏┳┓┣╋┫┗┻┛┃━</div>
+
+        <div class="description">Geometric shapes</div>
+        <div class="char-line">■□▲△▼▽◆◇○●◐◑◒◓◔◕◖◗◘◙◚◛◜◝◞◟◠◡☺☻☹</div>
+
+        <div class="description">Enclosed characters - Circled</div>
+        <div class="char-line">ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ</div>
+
+        <div class="description">Enclosed characters - Squared</div>
+        <div class="char-line">🅰🅱🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆉</div>
+
+        <div class="description">Typography</div>
+        <div class="char-line">‚„""''–—…‰‱°′″‴※‼⁇⁈⁉‽¿¡§¶†‡•‣⁃⁌⁍⁎⁏⁐⁑</div>
+    </div>
+
+    <h2>Emojis</h2>
+    <div class="char-section">
+        <div class="description">Faces &amp; People</div>
+        <div class="char-line emoji-line">😀😃😄😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗☺️😚😙🥲😋😛😜🤪😝🤑🤗🤭🤫🤔🤐🤨😐😑😶😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐</div>
+
+        <div class="description">Hand gestures</div>
+        <div class="char-line emoji-line">👋🤚🖐️✋🖖👌🤌🤏✌️🤞🤟🤘🤙👈👉👆🖕👇☝️👍👎👊✊🤛🤜👏🙌👐🤲🤝🙏✍️💅🤳</div>
+
+        <div class="description">Hearts &amp; symbols</div>
+        <div class="char-line emoji-line">❤️🧡💛💚💙💜🖤🤍🤎💔❣️💕💞💓💗💖💘💝💟☮️✝️☪️🕉️☸️✡️🔯🕎☯️☦️🛐</div>
+
+        <div class="description">Weather</div>
+        <div class="char-line emoji-line">☀️🌤️⛅🌦️🌧️⛈️🌩️🌨️❄️☃️⛄🌬️💨🌪️🌫️🌈☔⚡</div>
+
+        <div class="description">Multi-emoji sequences</div>
+        <div class="char-line emoji-line">👨&zwj;💻 👩&zwj;🚀 👨&zwj;🍳 👩&zwj;⚕️ 👨&zwj;👩&zwj;👧&zwj;👦 🇺🇸 🇬🇧 🇫🇷 🇯🇵 🧙&zwj;♂️ 🧙&zwj;♀️ 👱&zwj;🦰 👩&zwj;❤️&zwj;👩</div>
+
+        <div class="description">Skin tone variants</div>
+        <div class="char-line emoji-line">👋🏻👋🏼👋🏽👋🏾👋🏿 👍🏻👍🏼👍🏽👍🏾👍🏿</div>
+
+        <div class="description">Keycap sequences</div>
+        <div class="char-line emoji-line">1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣*️⃣#️⃣</div>
+    </div>
+
+    <div style="margin-top: 50px; padding: 20px; background-color: #e8f4f8; border-radius: 5px;">
+        <h3>How to convert this to PDF:</h3>
+        <p><strong>Method 1 (Browser):</strong> Open this HTML file in your browser, press Ctrl+P (or Cmd+P), and select "Save as PDF".</p>
+        <p><strong>Method 2 (LibreOffice):</strong> Open this HTML file in LibreOffice Writer, then File → Export as PDF.</p>
+        <p><strong>Method 3 (wkhtmltopdf):</strong> Use command line tool: <code>wkhtmltopdf input.html output.pdf</code></p>
+        <p><em>Note: Some characters may not display if the required fonts are not installed on your system. For best results, install Noto fonts from Google Fonts.</em></p>
+    </div>
+
+</body></html>
