@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-const INFECTED_PACKAGES = await fetch('https://raw.githubusercontent.com/almacareer/teamio-scripts/refs/heads/master/shai-hulud/packages.json').then(r => r.json());
+const INFECTED_PACKAGES = await fetch('https://raw.githubusercontent.com/wertecs/public-scripts/refs/heads/master/shai-hulud/packages.json').then(r => r.json());
 
 
 function getInstalledPackagesFromYarn(lockFile) {
