@@ -43,7 +43,7 @@ https://github.com/wertecs/public-scripts/tree/master/userscripts/aws-role-switc
     const STORAGE_KEY_ROLES_SERIALIZED = 'aws-role-switcher-roles-source-string';
     const STORAGE_KEY_ROLES_INITIALIZED_BY_EXAMPLE_DATA = 'aws-role-switcher-roles-sourced-from-example'
 
-    const EXAMPLE_ROLES = 'https://raw.githubusercontent.com/wertecs/public-scripts/refs/heads/master/userscripts/role_examples.json';
+    const EXAMPLE_ROLES = 'https://raw.githubusercontent.com/wertecs/public-scripts/refs/heads/master/userscripts/aws-role-switcher/role_examples.json';
 
     const ELEMENT_ID_MAIN_POPUP = 'aws-role-switcher-popup';
     const ELEMENT_ID_SETTINGS_POPUP = 'aws-role-switcher-popup-settings';
