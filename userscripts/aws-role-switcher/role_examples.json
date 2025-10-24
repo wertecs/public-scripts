@@ -1,0 +1,76 @@
+[
+    {
+      "icon": "🔧",
+      "name": "Development Team aaaaaaaaa",
+      "roles": [
+        {
+          "icon": "💻",
+          "name": "DevAdmin-CAM",
+          "account": "123456789012",
+          "region": "eu-west-1",
+          "displayName": "Code Artifact Manager",
+          "color": "3399ff"
+        },
+        {
+          "icon": "🚀",
+          "name": "Developer-PowerUser",
+          "account": "123456789012",
+          "region": "us-east-1",
+          "displayName": "Development Environment",
+          "color": "00cc66"
+        },
+        {
+          "icon": "🔬",
+          "name": "DevOps-Engineer",
+          "account": "234567890123",
+          "region": "eu-west-1",
+          "displayName": "CI/CD Pipeline",
+          "color": "ff9933"
+        }
+      ]
+    },
+    {
+      "icon": "🏢",
+      "name": "Production Access",
+      "roles": [
+        {
+          "icon": "👑",
+          "name": "ProdAdmin-FullAccess",
+          "account": "345678901234",
+          "region": "us-east-1",
+          "displayName": "Production Administrator",
+          "color": "cc0000"
+        },
+        {
+          "icon": "👀",
+          "name": "ProdReadOnly-Viewer",
+          "account": "345678901234",
+          "region": "us-east-1",
+          "displayName": "Production Monitoring",
+          "color": "9933ff"
+        }
+      ]
+    },
+    {
+      "icon": "💰",
+      "name": "Finance & Billing",
+      "roles": [
+        {
+          "icon": "📊",
+          "name": "Finance-BillingAccess",
+          "account": "456789012345",
+          "region": "us-east-1",
+          "displayName": "Billing Dashboard",
+          "color": "ffcc00"
+        },
+        {
+          "icon": "📈",
+          "name": "Finance-CostAnalyst",
+          "account": "456789012345",
+          "region": "us-east-1",
+          "displayName": "Cost Optimization",
+          "color": "ff6600"
+        }
+      ]
+    }
+]
