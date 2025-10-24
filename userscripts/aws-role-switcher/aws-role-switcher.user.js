@@ -6,6 +6,7 @@
 // @description  Quick AWS Role Switcher
 // @match        https://*.console.aws.amazon.com/*
 // @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
 // @grant        unsafeWindow
 // ==/UserScript==
 
@@ -67,17 +68,25 @@ https://github.com/wertecs/public-scripts/tree/master/userscripts/aws-role-switc
 
     function loadRoles(source, isUrl, isExample = false) {
         if (isUrl) {
-            fetch(source)
-                .then(response => response.json())
-                .then(data => {
-                    pushToStorage(STORAGE_KEY_ROLES_SERIALIZED, data, true);
-                    console.log(data);
-                    showToast('Roles loaded from URL');
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    showToast('An error occurred, see console', 'error');
-                });
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: source,
+                onload: function(response) {
+                    try {
+                        const data = JSON.parse(response.responseText);
+                        pushToStorage(STORAGE_KEY_ROLES_SERIALIZED, data, true);
+                        console.log(data);
+                        showToast('Roles loaded from URL');
+                    } catch (error) {
+                        console.error('Error parsing JSON:', error);
+                        showToast('Invalid JSON response', 'error');
+                    }
+                },
+                onerror: function(error) {
+                    console.error('Error loading roles:', error);
+                    showToast('Failed to load roles from URL', 'error');
+                }
+            });
         } else {
             pushToStorage(STORAGE_KEY_ROLES_SERIALIZED, source, true);
             showToast('Roles loaded from URL');
