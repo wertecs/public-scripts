@@ -27,7 +27,7 @@ A userscript that adds a convenient role switcher popup to the AWS Console, allo
 
 1. **Install a userscript manager** from the links above
 2. **Click to install the script**:
-   - [Install AWS Role Switcher](https://raw.githubusercontent.com/wertecs/public-scripts/refs/heads/master/userscripts/aws-role-switcher/user.js)
+   - [Install AWS Role Switcher](https://raw.githubusercontent.com/wertecs/public-scripts/refs/heads/master/userscripts/aws-role-switcher/aws-role-switcher.user.js)
 3. **Your userscript manager should detect the script and prompt for installation**
 4. **Click "Install" or "Confirm installation"**
 5. **Navigate to any AWS Console page** - the script will load automatically
@@ -158,14 +158,14 @@ See [role_examples.json](./role_examples.json) for a complete example.
 ### Project Structure
 ```
 aws-role-switcher/
-├── user.js              # Main userscript
+├── aws-role-switcher.user.jss              # Main userscript
 ├── role_examples.json   # Example role configuration
 └── README.md           # This file
 ```
 
 ### Local Development
 1. Clone the repository
-2. Make changes to `user.js`
+2. Make changes to `aws-role-switcher.user.js`
 3. Your userscript manager will auto-reload on file save (if watching local files)
 
 ### Hosting Your Roles
